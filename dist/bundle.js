@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "https://webpack-tutorial.test/dist/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -91,9 +91,13 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hello_world__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
 
-Object(_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"];
+
+_add_image__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -108,6 +112,37 @@ function helloWorld() {
 
 /* harmony default export */ __webpack_exports__["default"] = (helloWorld());
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function addImage() {
+    console.log('hello World Image');
+    const img = document.createElement('img');
+    img.alt = 'Kiwi';
+    img.width = 300;
+    img.src = _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;
+
+    const body = document.querySelector('body');
+    body.appendChild(img);
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (addImage());
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "191008053393e301c5669a3d665735df.jpg";
 
 /***/ })
 /******/ ]);
